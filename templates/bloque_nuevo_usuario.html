@@ -1,0 +1,12 @@
+<script  type="text/javascript">
+  	cc.controller("mapaInteractivoUsig",function(data, textStatus, jqXHR) { 
+		$('#direccion').html(data); 						
+		cc.esperarUsig();
+	});
+</script>
+
+<p>Para conocer la información de las obras de su barrio, deberá indicar la ubicación de su casa</p>
+
+<div id="direccion"></div> <br/>
+
+<button onclick="cc.crearUsuario()">Guardar ubicación de mi casa</button>	
